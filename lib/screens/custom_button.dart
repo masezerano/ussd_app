@@ -14,11 +14,15 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
+      width: 50,
+      height: 55,
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30),
+          ),
+          backgroundColor: Theme.of(context).colorScheme.onPrimary,
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
