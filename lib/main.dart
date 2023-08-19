@@ -11,17 +11,16 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
+      theme: ThemeData(useMaterial3: true).copyWith(
         brightness: Brightness.light,
-        useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color.fromARGB(255, 37, 149, 104),
+          seedColor: const Color.fromARGB(175, 37, 149, 104),
         ),
       ),
       home: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          backgroundColor: const Color.fromARGB(255, 83, 106, 58),
+          backgroundColor: const Color.fromARGB(172, 83, 140, 117),
           title: Text(
             'Ussd App',
             style: TextStyle(
